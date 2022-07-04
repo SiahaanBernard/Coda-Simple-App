@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
     # print(ec2.instance_id)
-    return "Hello World!"+ec2.instance_id
+    return "Hello World! from "+ec2.instance_id + " this is version 2"
 
 
 if __name__ == "__main__":
