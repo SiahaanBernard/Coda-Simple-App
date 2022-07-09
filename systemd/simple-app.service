@@ -1,0 +1,12 @@
+[Unit]
+Description=simple web application
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/Coda-Simple-App
+ExecStart=/usr/bin/python3 /home/ubuntu/Coda-Simple-App/main.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
